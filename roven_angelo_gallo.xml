@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+  <student>
+    <picture>https://shop.bandai.co.uk/wp-content/uploads/2022/03/bandai-dragon-ball-super-goku-character-001-1000x1295.png</picture>
+    <name>Son Goku</name>
+    <course>BSHM</course>
+    <yearsection>2A</yearsection>
+    <adviser>Master Buten</adviser>
+    <schoolyear>2024-2025</schoolyear>
+  </student>
+  <student>
+    <picture>https://wallpapers.com/images/hd/dragonball-z-2023-calendar-pictures-impunoc47lvgmn33.jpg</picture>
+    <name>Krillin</name>
+    <course>BSN</course>
+    <yearsection>2B</yearsection>
+    <adviser>Master Buten</adviser>
+    <schoolyear>2024-2025</schoolyear>
+  </student>
+  <student>
+    <picture> https://i1.sndcdn.com/artworks-5gjTJd55UpZIu5Nr-TzGy5Q-t500x500.jpg </picture>
+    <name>Rimuru</name>
+    <course>BSA</course>
+    <yearsection>2C</yearsection>
+    <adviser>Sheldon Cooper</adviser>
+    <schoolyear>2024-2025</schoolyear>
+  </student>
+  <student>
+    <picture>https://i.pinimg.com/236x/69/93/0d/69930d1e42d0c21b9c530bc214876af4.jpg </picture>
+    <name>Veldora Tempest</name>
+    <course>BSIS</course>
+    <yearsection>2D</yearsection>
+    <adviser>Dr. Teresita Mangahas</adviser>
+    <schoolyear>2024-2025</schoolyear>
+  </student>
+  <student>
+    <picture> https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeIAXlNujN2fN2ZuW4MWGG1VhgjVc6OyLuMg</picture>
+    <name>Pedro</name>
+    <course>BSIT</course>
+    <yearsection>2E</yearsection>
+    <adviser>Teresita Mangahas</adviser>
+    <schoolyear>2024-2025</schoolyear>
+  </student>
+  <student>
+    <picture> https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT99kd73I2KpGC3YGbS3T2DQSDiw-hVglAseg</picture>
+    <name>Juan Dela Cruz</name>
+    <course>BSIE</course>
+    <yearsection>2F</yearsection>
+    <adviser>Noemi P. Reyes</adviser>
+    <schoolyear>2024-2025</schoolyear>
+  </student>
+  <student>
+    <picture> https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl2FFP96Hqhiaq4uB7g6Li-OV6pz84RsDekw</picture>
+    <name>Roven Angelo Gallo</name>
+    <course>BSIT</course>
+    <yearsection>2G</yearsection>
+    <adviser>CICTA</adviser>
+    <schoolyear>2024-2025</schoolyear>
+  </student>
+  <student>
+    <picture>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJS47SRDj3xHzODqrkK4a1axkdru-36X1PEA	</picture>
+    <name>Neil Aspag</name>
+    <course>BSCE</course>
+    <yearsection>2H</yearsection>
+    <adviser>Omar Reyes</adviser>
+    <schoolyear>2024-2025</schoolyear>
+  </student>
+  <student>
+    <picture>https://thumbs.dreamstime.com/b/pug-dog-watching-you-square-2730976.jpg </picture>
+    <name>Jericho Dineros</name>
+    <course>BSIT</course>
+    <yearsection>2I</yearsection>
+    <adviser> Agapito Bayagbag</adviser>
+    <schoolyear>2024-2025</schoolyear>
+  </student>
+  <student>
+    <picture> https://compote.slate.com/images/46d9a343-a7d7-444d-83b8-4d5531b54ef8.jpg?crop=590%2C393%2Cx0%2Cy0 </picture>
+    <name>Jahmien Borja</name>
+    <course>BSSW</course>
+    <yearsection>2J</yearsection>
+    <adviser>Jewel Nicole Sayo</adviser>
+    <schoolyear>2024-2025</schoolyear>
+  </student>
+</students>

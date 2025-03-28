@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ABC Colleges - Library Users</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      margin: 20px;
+	  background: url('https://the-post-assets.sgp1.digitaloceanspaces.com/2023/01/BULSU_thumbnail.png') no-repeat center center fixed;
+	  background-size: cover;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 0;
+	  color: white;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 20px;
+	  color: white;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      border: 3px solid black;
+      padding: 10px;
+      width: 350px;
+      box-sizing: border-box;
+      overflow: hidden;
+	    background: white; /* Solid white background */
+  opacity: 1; /* Ensure full opacity */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
+  border-radius: 10px; /* Optional: Smooth rounded corners */
+    }
+
+    .card img {
+      width: 50px;
+      height: 60px;
+      float: right;
+      object-fit: cover;
+      margin-left: 10px;
+    }
+
+    .card-content {
+      text-align: left;
+    }
+
+    @media screen and (max-width: 600px) {
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ABC Colleges</h1>
+  <h2>Library users</h2>
+  <div class="container" id="studentContainer"></div>
+
+  <script>
+    fetch('roven_angelo_gallo.xml')
+      .then(response => response.text())
+      .then(data => {
+        const parser = new DOMParser();
+        const xml = parser.parseFromString(data, "application/xml");
+        const students = xml.getElementsByTagName('student');
+        const container = document.getElementById('studentContainer');
+
+        for (let i = 0; i < students.length; i++) {
+          const student = students[i];
+          const picture = student.getElementsByTagName('picture')[0].textContent;
+          const name = student.getElementsByTagName('name')[0].textContent;
+          const course = student.getElementsByTagName('course')[0].textContent;
+          const yearsection = student.getElementsByTagName('yearsection')[0].textContent;
+          const adviser = student.getElementsByTagName('adviser')[0].textContent;
+          const schoolyear = student.getElementsByTagName('schoolyear')[0].textContent;
+
+          const card = document.createElement('div');
+          card.className = 'card';
+          card.innerHTML = `
+            <img src="${picture}" alt="Student Picture">
+            <div class="card-content">
+              <p><strong>Name:</strong> ${name}</p>
+              <p><strong>Course:</strong> ${course}</p>
+              <p><strong>Year Level / Section:</strong> ${yearsection}</p>
+              <p><strong>Adviser:</strong> ${adviser}</p>
+              <p><strong>School Year:</strong> ${schoolyear}</p>
+            </div>
+          `;
+
+          container.appendChild(card);
+        }
+      })
+      .catch(error => console.error('Error loading XML:', error));
+  </script>
+</body>
+</html>
